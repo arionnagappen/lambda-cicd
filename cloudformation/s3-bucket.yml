@@ -14,7 +14,7 @@ Resources:
   MyS3Bucket:
     Type: 'AWS::S3::Bucket'
     Properties:
-      BucketName: !Sub '${AWS::StackName}-${Environment}-bucket-arion24'
+      BucketName: !Sub '${AWS::StackName}-${Environment}-bucket-arion25'
       Tags:
       - Key: Environment
         Value: !Ref Environment
@@ -23,5 +23,5 @@ Resources:
 
 Outputs:
   BucketName:
-    Description: 'Name of created S3 bucket 5700'
+    Description: 'Name of created S3 bucket 6600'
     Value: !Ref MyS3Bucket
